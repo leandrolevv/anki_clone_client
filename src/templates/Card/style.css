@@ -1,0 +1,64 @@
+.App {
+    text-align: center;
+}
+
+.container{
+    min-height: 100vh;
+    background-color: #eee;
+}
+
+.decks{
+    font-weight: bold;
+    margin: 15px 0;
+    font-size:20px;
+}
+
+.cards {
+    word-wrap: break-word;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 0 20px;
+}
+
+.card-content{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.card-content:hover{
+    scale: 1.05;
+}
+
+.card-front{
+    font-weight: bold;
+    font-size: large;
+    padding: 0 10px 0 0 
+}
+
+.card-tag{
+    font-style: italic;
+    font-size: smaller;
+    padding: 10px 0 0 0
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
